@@ -1,0 +1,33 @@
+{
+  "name": "luckytreasures",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "scss": "node-sass -watch scss public/sass/main.scss public/stylesheets/main.css"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "description": "Jason Luckey",
+  "main": "app.js",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rarencibia/luckyTreasures.git"
+  },
+  "author": "Robert Arencibia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rarencibia/luckyTreasures/issues"
+  },
+  "homepage": "https://github.com/Rarencibia/luckyTreasures#readme"
+}

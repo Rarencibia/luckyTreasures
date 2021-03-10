@@ -1,0 +1,16 @@
+{
+    "salesImage": [
+        {
+            "title": "Our store has Thousands of Collectibles",
+            "image": "../images/first.jpg"
+        },
+        {
+            "title": "Take a look at our G.I. Joe Line",
+            "image": "../images/second.jpg"
+        },
+        {
+            "title": "Get to know us",
+            "image": "../images/third.jpg"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+.introduction {
+    position: relative;
+    font-family: 'Norican', cursive;
+    width: 60%;
+
+    h1 {
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: auto;
+        color: black;
+        left: 10px;
+        position: relative;
+        font-size: 6.09rem;
+        text-shadow: 3px 3px 10px black;
+        z-index: 1;
+        letter-spacing: 2.5px;
+
+    }
+
+
+    h1::before{
+
+        color: white;
+        position: absolute;
+        left: 10px;
+        text-shadow: -3px -3px 5px white;
+        content: 'Luckey Treasures';   
+        font-size: 6.1rem;
+        z-index: 2;
+        letter-spacing: 2px;
+    }
+    
+    h1::after{
+        font-size: 6rem;
+        color: darkblue;
+        position: absolute;
+        left: 14px;
+        text-shadow: 1px 1px 5px black;
+        content: 'Luckey Treasures';  
+        letter-spacing: 2.8px;
+        z-index: 1;
+    }
+}
+

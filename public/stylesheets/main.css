@@ -1,0 +1,100 @@
+/* line 1, public/sass/_nav.scss */
+nav {
+  box-shadow: 3px 3px 10px black;
+  background-color: #5CE0D8; }
+  /* line 6, public/sass/_nav.scss */
+  nav .logoAndNav {
+    display: flex;
+    border: 3px solid black; }
+  /* line 10, public/sass/_nav.scss */
+  nav .logo {
+    margin-left: 25px; }
+  /* line 14, public/sass/_nav.scss */
+  nav .logoImg {
+    width: 250px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px double #FFD700; }
+  /* line 22, public/sass/_nav.scss */
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    margin-right: 30px; }
+  /* line 29, public/sass/_nav.scss */
+  nav li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    word-wrap: break-word;
+    width: 200px;
+    list-style: none;
+    font-size: 40px;
+    font-weight: 900; }
+    /* line 39, public/sass/_nav.scss */
+    nav li:hover {
+      transform: scale(1.1);
+      text-decoration: overline; }
+  /* line 45, public/sass/_nav.scss */
+  nav a {
+    text-decoration: none;
+    color: black; }
+
+/* line 1, public/sass/_logo.scss */
+.introduction {
+  position: relative;
+  font-family: 'Norican', cursive;
+  width: 60%; }
+  /* line 6, public/sass/_logo.scss */
+  .introduction h1 {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+    color: black;
+    left: 10px;
+    position: relative;
+    font-size: 6.09rem;
+    text-shadow: 3px 3px 10px black;
+    z-index: 1;
+    letter-spacing: 2.5px; }
+  /* line 21, public/sass/_logo.scss */
+  .introduction h1::before {
+    color: white;
+    position: absolute;
+    left: 10px;
+    text-shadow: -3px -3px 5px white;
+    content: 'Luckey Treasures';
+    font-size: 6.1rem;
+    z-index: 2;
+    letter-spacing: 2px; }
+  /* line 33, public/sass/_logo.scss */
+  .introduction h1::after {
+    font-size: 6rem;
+    color: darkblue;
+    position: absolute;
+    left: 14px;
+    text-shadow: 1px 1px 5px black;
+    content: 'Luckey Treasures';
+    letter-spacing: 2.8px;
+    z-index: 1; }
+
+/* line 1, public/sass/_index.scss */
+#carouselWrapper {
+  width: 95%;
+  height: 800px;
+  margin: auto;
+  box-shadow: 3px 3px 10px #FFCF43; }
+  /* line 6, public/sass/_index.scss */
+  #carouselWrapper #carouselImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto !important; }
+
+/* line 10, public/sass/main.scss */
+body {
+  font-family: 'Akaya Telivigala', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #01345B; }

@@ -1,0 +1,15 @@
+$main-color-yellow : #FFCF43;
+$main-color-teal : #5CE0D8;
+$main-color-darkblue: #01345B;
+
+
+@import './nav';
+@import './logo.scss';
+@import './index';
+
+body {
+    font-family: 'Akaya Telivigala', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: $main-color-darkblue;
+}
