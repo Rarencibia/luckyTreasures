@@ -17,15 +17,20 @@ async function getJson(){
         img.src = data.salesImage[i].image;
         img.setAttribute("id", "carouselImg");
 
+        let h1Header = document.createElement("h1");
+        h1Header.innerHTML = data.salesImage[i].title;
+        h1Header.setAttribute("id", "carouselHeader")
+
+
 
 
         carouselWrapper.appendChild(img);
-        console.log(i);
+        carouselWrapper.appendChild(h1Header);
 
-        await sleep(2000);
+        await sleep(5000);
 
         carouselWrapper.removeChild(img);
-
+        carouselWrapper.removeChild(h1Header);
         if(i === 2){
             i = i - 3;
         }

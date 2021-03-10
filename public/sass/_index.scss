@@ -1,4 +1,5 @@
 #carouselWrapper {
+    position: relative;
     width: 95%;
     height: 800px;
     margin: auto;
@@ -8,5 +9,16 @@
         height: 100%;
         object-fit: cover;
         margin: auto!important;
+    }
+    #carouselHeader {
+        position: absolute;
+        background-color: black;
+        color: $main-color-yellow;
+        top: -3%;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 }
