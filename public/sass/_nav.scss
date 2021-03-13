@@ -47,6 +47,34 @@ nav {
         color: black;
 
     }
+    .hamburgerMenu {
+        width: 50px;
+        cursor: pointer;
+        display: none;
+    }
 
 
 }
+
+@media screen and (max-width: 1355px) {
+
+    ul, li {
+        display: none!important;
+    }
+    .hamburgerMenu {
+        display: block!important;
+        margin-right: 30px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 755px) {
+    .hamburgerMenu {
+        border-radius: 50%;
+        border: white 3px double;
+        margin-left: 15px;
+        width: 60px!important;
+    }
+    
+  }

@@ -3,7 +3,7 @@
     font-family: 'Norican', cursive;
     width: 60%;
 
-    h1 {
+    .logoDesign {
         flex-wrap: nowrap;
         width: 100%;
         margin: auto;
@@ -18,7 +18,7 @@
     }
 
 
-    h1::before{
+    .logoDesign::before{
 
         color: white;
         position: absolute;
@@ -30,7 +30,7 @@
         letter-spacing: 2px;
     }
     
-    h1::after{
+    .logoDesign::after{
         font-size: 6rem;
         color: darkblue;
         position: absolute;
@@ -42,3 +42,20 @@
     }
 }
 
+@media screen and (max-width: 1355px) {
+
+    .introduction{
+        width: 95%;
+    }
+  }
+
+@media screen and (max-width: 755px) {
+
+    .introduction{
+        width: 0;
+    }
+    .logoDesign {
+        display: none!important;
+    }
+
+}

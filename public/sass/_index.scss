@@ -40,3 +40,19 @@
         
     }
 }
+
+@media only screen and (max-width: 1355px){
+    #rightArrow {
+        left: 92%!important;
+    }
+}
+
+@media only screen and (max-width: 755px){
+    #rightArrow {
+        left: 80%!important;
+    }
+
+    .carouselArrows {
+        top: 87%!important;
+    }
+}

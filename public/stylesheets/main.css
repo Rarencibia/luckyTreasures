@@ -40,6 +40,28 @@ nav {
   nav a {
     text-decoration: none;
     color: black; }
+  /* line 50, public/sass/_nav.scss */
+  nav .hamburgerMenu {
+    width: 50px;
+    cursor: pointer;
+    display: none; }
+
+@media screen and (max-width: 1355px) {
+  /* line 61, public/sass/_nav.scss */
+  ul, li {
+    display: none !important; }
+  /* line 64, public/sass/_nav.scss */
+  .hamburgerMenu {
+    display: block !important;
+    margin-right: 30px; } }
+
+@media screen and (max-width: 755px) {
+  /* line 73, public/sass/_nav.scss */
+  .hamburgerMenu {
+    border-radius: 50%;
+    border: white 3px double;
+    margin-left: 15px;
+    width: 60px !important; } }
 
 /* line 1, public/sass/_logo.scss */
 .introduction {
@@ -47,7 +69,7 @@ nav {
   font-family: 'Norican', cursive;
   width: 60%; }
   /* line 6, public/sass/_logo.scss */
-  .introduction h1 {
+  .introduction .logoDesign {
     flex-wrap: nowrap;
     width: 100%;
     margin: auto;
@@ -59,7 +81,7 @@ nav {
     z-index: 1;
     letter-spacing: 2.5px; }
   /* line 21, public/sass/_logo.scss */
-  .introduction h1::before {
+  .introduction .logoDesign::before {
     color: white;
     position: absolute;
     left: 10px;
@@ -69,7 +91,7 @@ nav {
     z-index: 2;
     letter-spacing: 2px; }
   /* line 33, public/sass/_logo.scss */
-  .introduction h1::after {
+  .introduction .logoDesign::after {
     font-size: 6rem;
     color: darkblue;
     position: absolute;
@@ -78,6 +100,19 @@ nav {
     content: 'Luckey Treasures';
     letter-spacing: 2.8px;
     z-index: 1; }
+
+@media screen and (max-width: 1355px) {
+  /* line 47, public/sass/_logo.scss */
+  .introduction {
+    width: 95%; } }
+
+@media screen and (max-width: 755px) {
+  /* line 54, public/sass/_logo.scss */
+  .introduction {
+    width: 0; }
+  /* line 57, public/sass/_logo.scss */
+  .logoDesign {
+    display: none !important; } }
 
 /* line 1, public/sass/_index.scss */
 #carouselWrapper {
@@ -120,6 +155,19 @@ nav {
     transform: rotate(180deg);
     left: 92%; }
 
+@media only screen and (max-width: 1355px) {
+  /* line 45, public/sass/_index.scss */
+  #rightArrow {
+    left: 92% !important; } }
+
+@media only screen and (max-width: 755px) {
+  /* line 51, public/sass/_index.scss */
+  #rightArrow {
+    left: 80% !important; }
+  /* line 55, public/sass/_index.scss */
+  .carouselArrows {
+    top: 87% !important; } }
+
 /* line 1, public/sass/_aboutUs.scss */
 .aboutUsBackgroundWrapper {
   position: relative;
@@ -148,17 +196,34 @@ nav {
 /* line 1, public/sass/_footer.scss */
 footer {
   width: 100%;
-  height: 50px;
+  height: 70px;
   background-color: black !important;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white; }
+  /* line 11, public/sass/_footer.scss */
+  footer .companyNameFooter {
+    font-size: 1.5rem; }
+  /* line 15, public/sass/_footer.scss */
+  footer .socialMediaLogosWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 20, public/sass/_footer.scss */
+  footer .socialMediaLogos {
+    width: 50px;
+    margin-left: 20px; }
+  /* line 26, public/sass/_footer.scss */
+  footer .contactUsFooter {
+    cursor: pointer;
+    margin-left: 100px; }
 
 /* line 12, public/sass/main.scss */
 body {
   font-family: 'Akaya Telivigala', cursive;
   margin: 0;
   padding: 0;
-  background-color: #01345B; }
+  background-color: #01345B;
+  overflow-x: hidden; }
