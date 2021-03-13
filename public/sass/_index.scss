@@ -21,4 +21,22 @@
         margin-left: auto;
         text-align: center;
     }
+
+    .carouselArrows {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        background-color: white;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    #rightArrow {
+        transform: rotate(180deg);
+        left: 92%;
+        
+    }
 }

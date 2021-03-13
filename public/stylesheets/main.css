@@ -103,8 +103,60 @@ nav {
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
+  /* line 25, public/sass/_index.scss */
+  #carouselWrapper .carouselArrows {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    background-color: white;
+    border-radius: 50%; }
+    /* line 33, public/sass/_index.scss */
+    #carouselWrapper .carouselArrows:hover {
+      cursor: pointer; }
+  /* line 37, public/sass/_index.scss */
+  #carouselWrapper #rightArrow {
+    transform: rotate(180deg);
+    left: 92%; }
 
-/* line 10, public/sass/main.scss */
+/* line 1, public/sass/_aboutUs.scss */
+.aboutUsBackgroundWrapper {
+  position: relative;
+  width: 95%;
+  height: 80vh !important;
+  overflow: hidden; }
+  /* line 7, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .aboutUsBackground {
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+    filter: blur(3px);
+    opacity: .20; }
+  /* line 15, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .aboutInformationWrapper {
+    width: 80%;
+    margin: auto;
+    padding: 0; }
+  /* line 21, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .aboutInformation {
+    position: absolute;
+    font-size: 2.5rem;
+    line-height: 2;
+    color: white; }
+
+/* line 1, public/sass/_footer.scss */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: black !important;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+
+/* line 12, public/sass/main.scss */
 body {
   font-family: 'Akaya Telivigala', cursive;
   margin: 0;
