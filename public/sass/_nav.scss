@@ -24,6 +24,7 @@ nav {
         align-items: center;
         justify-content: flex-start!important;
         margin-right: 30px;
+        white-space: nowrap;
 
     }
     .navLi {
@@ -47,33 +48,21 @@ nav {
         color: black;
 
     }
-    .hamburgerMenu {
-        width: 50px;
-        cursor: pointer;
-        display: none;
-    }
+
 
 
 }
 
-@media screen and (max-width: 1355px) {
+@media only screen and (max-width: 1330px){
+    nav {
+        .introduction {
+            display: none;
+        }
+        .navUl {
+            width: 100%!important;
+            padding: 0;
 
-    .navUl, .navLi {
-        display: none!important;
-    }
-    .hamburgerMenu {
-        display: block!important;
-        margin-right: 30px;
-    }
-    
-  }
+        }
 
-
-  @media screen and (max-width: 755px) {
-    .hamburgerMenu {
-        border-radius: 50%;
-        margin-left: 15px;
-        width: 60px!important;
     }
-    
-  }
+}

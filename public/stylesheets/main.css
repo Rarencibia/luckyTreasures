@@ -21,8 +21,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start !important;
-    margin-right: 30px; }
-  /* line 29, public/sass/_nav.scss */
+    margin-right: 30px;
+    white-space: nowrap; }
+  /* line 30, public/sass/_nav.scss */
   nav .navLi {
     display: flex;
     align-items: center;
@@ -32,35 +33,23 @@ nav {
     list-style: none;
     font-size: 40px;
     font-weight: 900; }
-    /* line 39, public/sass/_nav.scss */
+    /* line 40, public/sass/_nav.scss */
     nav .navLi:hover {
       transform: scale(1.1);
       text-decoration: overline; }
-  /* line 45, public/sass/_nav.scss */
+  /* line 46, public/sass/_nav.scss */
   nav .navLinks {
     text-decoration: none !important;
     color: black; }
-  /* line 50, public/sass/_nav.scss */
-  nav .hamburgerMenu {
-    width: 50px;
-    cursor: pointer;
+
+@media only screen and (max-width: 1330px) {
+  /* line 58, public/sass/_nav.scss */
+  nav .introduction {
     display: none; }
-
-@media screen and (max-width: 1355px) {
   /* line 61, public/sass/_nav.scss */
-  .navUl, .navLi {
-    display: none !important; }
-  /* line 64, public/sass/_nav.scss */
-  .hamburgerMenu {
-    display: block !important;
-    margin-right: 30px; } }
-
-@media screen and (max-width: 755px) {
-  /* line 73, public/sass/_nav.scss */
-  .hamburgerMenu {
-    border-radius: 50%;
-    margin-left: 15px;
-    width: 60px !important; } }
+  nav .navUl {
+    width: 100% !important;
+    padding: 0; } }
 
 /* line 1, public/sass/_logo.scss */
 .introduction {
