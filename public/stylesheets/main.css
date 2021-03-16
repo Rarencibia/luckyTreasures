@@ -116,7 +116,7 @@ nav {
 /* line 1, public/sass/_index.scss */
 #carouselWrapper {
   position: relative;
-  width: 95%;
+  width: 75%;
   height: 800px;
   margin: auto;
   box-shadow: 3px 3px 10px #FFCF43; }
@@ -126,18 +126,27 @@ nav {
     height: 100%;
     object-fit: cover;
     margin: auto !important; }
-  /* line 13, public/sass/_index.scss */
+  /* line 14, public/sass/_index.scss */
   #carouselWrapper #carouselHeader {
     position: absolute;
-    background-color: black;
-    color: #FFCF43;
-    top: -3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    width: 50%;
+    height: 30%;
+    background-color: #5CE0D8;
+    opacity: .60;
+    border: 4px solid white;
+    border-radius: 2px;
+    color: black;
+    top: 60%;
     left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto;
     text-align: center; }
-  /* line 25, public/sass/_index.scss */
+  /* line 35, public/sass/_index.scss */
   #carouselWrapper .carouselArrows {
     width: 100px;
     height: 100px;
@@ -146,24 +155,24 @@ nav {
     left: 2%;
     background-color: white;
     border-radius: 50%; }
-    /* line 33, public/sass/_index.scss */
+    /* line 43, public/sass/_index.scss */
     #carouselWrapper .carouselArrows:hover {
       cursor: pointer; }
-  /* line 37, public/sass/_index.scss */
+  /* line 47, public/sass/_index.scss */
   #carouselWrapper #rightArrow {
     transform: rotate(180deg);
     left: 92%; }
 
 @media only screen and (max-width: 1355px) {
-  /* line 45, public/sass/_index.scss */
+  /* line 55, public/sass/_index.scss */
   #rightArrow {
     left: 92% !important; } }
 
 @media only screen and (max-width: 755px) {
-  /* line 51, public/sass/_index.scss */
+  /* line 61, public/sass/_index.scss */
   #rightArrow {
     left: 75% !important; }
-  /* line 55, public/sass/_index.scss */
+  /* line 65, public/sass/_index.scss */
   .carouselArrows {
     top: 87% !important; } }
 
@@ -171,7 +180,7 @@ nav {
 .aboutUsBackgroundWrapper {
   position: relative;
   width: 95%;
-  height: 80vh !important;
+  height: 100vh !important;
   overflow: hidden; }
   /* line 7, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutUsBackground {

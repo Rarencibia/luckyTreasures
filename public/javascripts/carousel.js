@@ -27,7 +27,7 @@ async function getJson(){
             carouselWrapper.appendChild(img);
             carouselWrapper.appendChild(h1Header);
 
-            await sleep(10000);
+            await sleep(3000);
 
             carouselWrapper.removeChild(img);
             carouselWrapper.removeChild(h1Header);
