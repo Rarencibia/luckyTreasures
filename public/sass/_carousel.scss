@@ -1,0 +1,13 @@
+.carousel-item{
+    height: 80vh;
+
+
+
+    .d-block{
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+        filter: brightness(.70);
+    }
+
+}

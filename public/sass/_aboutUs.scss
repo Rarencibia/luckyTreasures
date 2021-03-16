@@ -1,16 +1,18 @@
 .aboutUsBackgroundWrapper{
     position: relative;
-    width: 95%;
-    height: 100vh!important;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 
     .aboutUsBackground{
         position: absolute;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
         filter: blur(3px);
         opacity: .20;
+        filter: brightness(.60);    
     }
+
 
     .aboutInformationWrapper {
         width: 80%;
@@ -19,7 +21,7 @@
     }
 
     .aboutInformation {
-        position: absolute;
+        text-align: left;
         font-size: 2.5rem;
         line-height: 2;
         color: white;;

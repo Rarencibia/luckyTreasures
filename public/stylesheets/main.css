@@ -17,13 +17,13 @@ nav {
     object-fit: cover;
     border: 3px double #FFD700; }
   /* line 22, public/sass/_nav.scss */
-  nav ul {
+  nav .navUl {
     display: flex;
     align-items: center;
     justify-content: flex-start !important;
     margin-right: 30px; }
   /* line 29, public/sass/_nav.scss */
-  nav li {
+  nav .navLi {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,12 +33,12 @@ nav {
     font-size: 40px;
     font-weight: 900; }
     /* line 39, public/sass/_nav.scss */
-    nav li:hover {
+    nav .navLi:hover {
       transform: scale(1.1);
       text-decoration: overline; }
   /* line 45, public/sass/_nav.scss */
-  nav a {
-    text-decoration: none;
+  nav .navLinks {
+    text-decoration: none !important;
     color: black; }
   /* line 50, public/sass/_nav.scss */
   nav .hamburgerMenu {
@@ -48,7 +48,7 @@ nav {
 
 @media screen and (max-width: 1355px) {
   /* line 61, public/sass/_nav.scss */
-  ul, li {
+  .navUl, .navLi {
     display: none !important; }
   /* line 64, public/sass/_nav.scss */
   .hamburgerMenu {
@@ -164,39 +164,40 @@ nav {
     left: 92%; }
 
 @media only screen and (max-width: 1355px) {
-  /* line 55, public/sass/_index.scss */
+  /* line 56, public/sass/_index.scss */
   #rightArrow {
     left: 92% !important; } }
 
 @media only screen and (max-width: 755px) {
-  /* line 61, public/sass/_index.scss */
+  /* line 62, public/sass/_index.scss */
   #rightArrow {
     left: 75% !important; }
-  /* line 65, public/sass/_index.scss */
+  /* line 66, public/sass/_index.scss */
   .carouselArrows {
     top: 87% !important; } }
 
 /* line 1, public/sass/_aboutUs.scss */
 .aboutUsBackgroundWrapper {
   position: relative;
-  width: 95%;
-  height: 100vh !important;
+  width: 100%;
+  height: auto;
   overflow: hidden; }
   /* line 7, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutUsBackground {
     position: absolute;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     filter: blur(3px);
-    opacity: .20; }
-  /* line 15, public/sass/_aboutUs.scss */
+    opacity: .20;
+    filter: brightness(0.6); }
+  /* line 17, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutInformationWrapper {
     width: 80%;
     margin: auto;
     padding: 0; }
-  /* line 21, public/sass/_aboutUs.scss */
+  /* line 23, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutInformation {
-    position: absolute;
+    text-align: left;
     font-size: 2.5rem;
     line-height: 2;
     color: white; }
@@ -230,7 +231,17 @@ footer {
     cursor: pointer;
     margin-left: 100px; }
 
-/* line 12, public/sass/main.scss */
+/* line 1, public/sass/_carousel.scss */
+.carousel-item {
+  height: 80vh; }
+  /* line 6, public/sass/_carousel.scss */
+  .carousel-item .d-block {
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    filter: brightness(0.7); }
+
+/* line 13, public/sass/main.scss */
 body {
   font-family: 'Akaya Telivigala', cursive;
   margin: 0;
