@@ -23,10 +23,28 @@ footer {
         width: 50px;
         margin-left: 20px;
 
+    &:hover {
+        animation-name: logoSize;
+        animation-duration: 1.2s;
+        transition: ease-in-out;
+        transform: scale(1.1);
+    }
+
     }
 
     .contactUsFooter {
         cursor: pointer;
         margin-left: 100px;
+    }
+
+    .logoFooterWrapper{
+        position: absolute;
+        left: 20px;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        box-shadow: 3px 3px 10px #5CE0D8;
+    }
+    .logoFooterImg{
+        width: 80px;
     }
 }

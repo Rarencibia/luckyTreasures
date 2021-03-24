@@ -1,0 +1,117 @@
+.featuredItemsListWrapper {
+    background-image: url('../images/featuredBR.jpg');
+    background-position: right;
+    background-size: cover;
+    filter: brightness(.80);
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    border-top: 10px solid black;
+    
+    .featuredItemsEnter {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .buttonWrapper {
+        width: 30%;
+        background: rgba(0,0,0,0.40);
+        box-shadow: black 3px 3px 10px;
+        border-radius: 10px;
+        height: 300px;
+    }
+
+    .featuredButton{
+        display: flex;
+        align-self: flex-start;
+        justify-content: center;
+        text-align: center;
+        border: 3px solid black;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 4rem;
+    }
+
+    .featuredItemObjectsWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .featuredItemObject {
+        width: 200px;
+        margin-right: 20px;
+        border: white double 5px;
+        box-shadow: 3px 3px 10px white;
+        border-radius: 10px;
+
+
+    }
+
+    .featuredItemImg {
+        width: 100%;
+    }
+
+    .bubblesWrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .bubbles{
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        animation: bubble 7s linear infinite;
+    }
+
+    @keyframes bubble {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-80vh);
+            opacity: 0;
+        }
+    }
+
+    .bubbles:nth-child(1){
+        animation-delay: 2s;
+    }
+    .bubbles:nth-child(2){
+        animation-delay: 1s;
+    }
+    .bubbles:nth-child(3){
+        animation-delay: 3s;
+    }
+    .bubbles:nth-child(4){
+        animation-delay: 4.5s;
+    }
+    .bubbles:nth-child(5){
+        animation-delay: 3s;
+    }
+    .bubbles:nth-child(6){
+        animation-delay: 6s;
+    }
+    .bubbles:nth-child(7){
+        animation-delay: 7s;
+    }
+}
