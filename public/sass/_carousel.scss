@@ -1,8 +1,37 @@
+.buyButtonsWrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;
+
+
+
+    .buyButton {
+        height: 50px;
+        width: 200px;
+        margin-top: 30px;
+        font-size: 2rem;
+        opacity: .60;
+        border-radius: 10%;
+        background-color: darkblue;
+        color: white;
+        box-shadow: black 3px 3px 10px;
+        &:hover {
+            opacity: 1;
+            box-shadow: white 3px 3px 10px;
+        }
+    }
+}
+
+
 .carousel-item{
-    height: 80vh;
 
 
-
+    height: 85vh;
     .d-block{
         height: 100%;
         object-fit: cover;
