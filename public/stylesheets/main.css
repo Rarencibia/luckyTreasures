@@ -261,7 +261,7 @@ footer {
     /* line 23, public/sass/_carousel.scss */
     .buyButtonsWrapper .buyButton:hover {
       opacity: 1;
-      box-shadow: white 3px 3px 10px; }
+      box-shadow: -3px -3px 10px white; }
 
 /* line 31, public/sass/_carousel.scss */
 .carousel-item {
@@ -273,61 +273,79 @@ footer {
     background-size: cover;
     filter: brightness(0.7); }
 
+/* line 44, public/sass/_carousel.scss */
+#carouselExampleIndicators {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 50px; }
+
 /* line 1, public/sass/_featuredItems.scss */
 .featuredItemsListWrapper {
-  background: #01345b;
-  background: linear-gradient(38deg, #01345b 0%, black 100%, #5ce0d8 100%);
-  width: 100%;
-  height: 80vh;
+  background-color: orange;
+  width: 95%;
+  height: auto;
   display: flex;
-  padding-top: 10px; }
-  /* line 13, public/sass/_featuredItems.scss */
-  .featuredItemsListWrapper .featuredItemsEnter {
-    position: absolute;
-    width: 100%;
+  margin: auto;
+  margin-bottom: 50px; }
+  /* line 15, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper .necaIntroductionWrapper {
+    width: 50%;
     display: flex;
-    align-self: flex-start;
-    justify-content: center;
-    text-align: center; }
-  /* line 23, public/sass/_featuredItems.scss */
-  .featuredItemsListWrapper .buttonWrapper {
-    width: 30%;
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: white 3px 3px 10px;
-    border-radius: 10px;
-    height: 300px; }
-  /* line 31, public/sass/_featuredItems.scss */
-  .featuredItemsListWrapper .featuredButton {
-    display: flex;
-    align-self: flex-start;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    border: 3px solid black;
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 4rem; }
-  /* line 43, public/sass/_featuredItems.scss */
-  .featuredItemsListWrapper .featuredItemObjectsWrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem; }
+  /* line 24, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper .necaIntroductionWrapper h1 {
+    font-size: 6rem; }
+  /* line 28, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper necaIntroductionWrapper h3 {
+    font-size: 3.5rem; }
+  /* line 32, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper .necaImgWrapper {
+    width: 50%; }
+  /* line 35, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper .necaMainImg {
+    object-fit: cover;
     width: 100%;
-    padding-bottom: 20px; }
-  /* line 52, public/sass/_featuredItems.scss */
-  .featuredItemsListWrapper .featuredItemObject {
-    width: 200px;
-    margin-right: 20px;
-    border: white double 5px;
-    box-shadow: 3px 3px 10px white;
-    border-radius: 10px; }
-  /* line 62, public/sass/_featuredItems.scss */
-  .featuredItemsListWrapper .featuredItemImg {
-    width: 100%; }
+    height: 100%; }
+  /* line 41, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper .posionArrowWrapper {
+    display: flex; }
+  /* line 45, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper .posionArrowImages {
+    margin-left: 10px;
+    width: 50px; }
+  /* line 50, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper #poisonImgLink {
+    background-color: white;
+    filter: drop-shadow(3px 3px 8px black);
+    border-radius: 50%; }
+    /* line 54, public/sass/_featuredItems.scss */
+    .featuredItemsListWrapper #poisonImgLink:hover {
+      cursor: pointer; }
 
-/* line 14, public/sass/main.scss */
+/* line 1, public/sass/_linkIcons.scss */
+.linkIconsWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+  /* line 10, public/sass/_linkIcons.scss */
+  .linkIconsWrapper .linkIconsContainer {
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+  /* line 15, public/sass/_linkIcons.scss */
+  .linkIconsWrapper .linkIconImg {
+    width: 80px; }
+  /* line 19, public/sass/_linkIcons.scss */
+  .linkIconsWrapper a {
+    color: white; }
+
+/* line 15, public/sass/main.scss */
 body {
   font-family: 'Akaya Telivigala', cursive;
   margin: 0;

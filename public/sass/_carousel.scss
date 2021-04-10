@@ -22,7 +22,7 @@
         box-shadow: black 3px 3px 10px;
         &:hover {
             opacity: 1;
-            box-shadow: white 3px 3px 10px;
+            box-shadow: -3px -3px 10px white;
         }
     }
 }
@@ -39,4 +39,10 @@
         filter: brightness(.70);
     }
 
+}
+
+#carouselExampleIndicators{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
 }
