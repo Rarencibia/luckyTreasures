@@ -1,0 +1,76 @@
+.popFunkoFeatured {
+    width: 95%;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // box-shadow: 0px -3px 8px white;
+    flex-wrap: wrap;
+    // background-color: #5CE0D8;
+    margin-bottom: 300px;
+    color: white;
+
+    .popMainImgContainer {
+        height: 100%;
+    }
+
+
+
+    .popFeaturedImg {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+
+        
+    }
+
+    .longPopImage {
+        width: 420px;
+        height: 100%!important;
+        margin-right: 2px;
+
+    }
+
+    .popRowImgContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+        grid-gap: 10px;
+        // background-color: #5CE0D8;
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+
+    .popFeaturedIntro {
+        grid-column: span 2;
+        text-align: center;
+        
+    }
+
+    .popFeaturedIntro h1 {
+        font-size: 4rem;
+    }
+
+    .popFeaturedImgAll {
+        border: 3px double white;
+        filter: drop-shadow(3px 3px 10px black);
+        border-radius: 10%;
+        &:hover {
+            cursor: pointer;
+            animation-name: zoom-In;
+            animation-duration: 1s;
+            
+        }
+    }
+
+    .popFeaturedOutro {
+        grid-column: span 2;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+
+}

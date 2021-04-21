@@ -345,7 +345,62 @@ footer {
   .linkIconsWrapper a {
     color: white; }
 
-/* line 15, public/sass/main.scss */
+/* line 1, public/sass/_popFeatured.scss */
+.popFunkoFeatured {
+  width: 95%;
+  height: auto;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 300px;
+  color: white; }
+  /* line 15, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popMainImgContainer {
+    height: 100%; }
+  /* line 21, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popFeaturedImg {
+    width: 400px;
+    height: 200px;
+    object-fit: cover; }
+  /* line 29, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .longPopImage {
+    width: 420px;
+    height: 100% !important;
+    margin-right: 2px; }
+  /* line 36, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popRowImgContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+    border-radius: 10px; }
+  /* line 47, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popFeaturedIntro {
+    grid-column: span 2;
+    text-align: center; }
+  /* line 53, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popFeaturedIntro h1 {
+    font-size: 4rem; }
+  /* line 57, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popFeaturedImgAll {
+    border: 3px double white;
+    filter: drop-shadow(3px 3px 10px black);
+    border-radius: 10%; }
+    /* line 61, public/sass/_popFeatured.scss */
+    .popFunkoFeatured .popFeaturedImgAll:hover {
+      cursor: pointer;
+      animation-name: zoom-In;
+      animation-duration: 1s; }
+  /* line 69, public/sass/_popFeatured.scss */
+  .popFunkoFeatured .popFeaturedOutro {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 3rem; }
+
+/* line 16, public/sass/main.scss */
 body {
   font-family: 'Akaya Telivigala', cursive;
   margin: 0;
