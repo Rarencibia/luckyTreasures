@@ -172,21 +172,47 @@ nav {
   height: auto;
   overflow: hidden; }
   /* line 7, public/sass/_aboutUs.scss */
-  .aboutUsBackgroundWrapper .aboutUsBackground {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    filter: blur(3px);
-    opacity: .20;
-    filter: brightness(0.6); }
+  .aboutUsBackgroundWrapper .servicesWrapper {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 5%;
+    margin-bottom: 200px; }
   /* line 17, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .servicesH1 {
+    text-align: center;
+    color: white; }
+  /* line 22, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .serviceIcons {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; }
+  /* line 28, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .servicesH3 {
+    background-color: orange;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px black; }
+  /* line 36, public/sass/_aboutUs.scss */
+  .aboutUsBackgroundWrapper .aboutUsBackground {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    z-index: 1;
+    margin-bottom: 100px; }
+  /* line 49, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutInformationWrapper {
+    position: relative;
     width: 80%;
     margin: auto;
-    padding: 0; }
-  /* line 23, public/sass/_aboutUs.scss */
+    padding: 0;
+    z-index: 2;
+    gap: 60px; }
+  /* line 59, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutInformation {
-    text-indent: 50px;
     text-align: left;
     font-size: 2.5rem;
     line-height: 2;
