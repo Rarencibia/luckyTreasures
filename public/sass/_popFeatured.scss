@@ -7,14 +7,13 @@
     justify-content: center;
     align-items: center;
     // box-shadow: 0px -3px 8px white;
-    flex-wrap: wrap;
     // background-color: #5CE0D8;
     margin-bottom: 300px;
     color: white;
 
-    .popMainImgContainer {
-        height: 100%;
-    }
+    // .popMainImgContainer {
+    //     // height: 100%;
+    // }
 
 
 
@@ -22,8 +21,6 @@
         width: 400px;
         height: 200px;
         object-fit: cover;
-
-        
     }
 
     .longPopImage {
@@ -34,9 +31,9 @@
     }
 
     .popRowImgContainer {
+        // width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
         grid-gap: 10px;
         // background-color: #5CE0D8;
         padding: 20px;
@@ -55,7 +52,6 @@
     }
 
     .popFeaturedImgAll {
-        border: 3px double white;
         filter: drop-shadow(3px 3px 10px black);
         border-radius: 10%;
         &:hover {
@@ -73,4 +69,10 @@
     }
 
 
+}
+
+@media only screen and (max-width: 850px){
+    .popFunkoFeatured{
+        flex-wrap: wrap;
+    }
 }

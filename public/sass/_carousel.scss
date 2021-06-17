@@ -42,7 +42,13 @@
 }
 
 #carouselExampleIndicators{
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 850px){
+    .buyButtonsWrapper{
+        gap: 100px;
+    }
 }

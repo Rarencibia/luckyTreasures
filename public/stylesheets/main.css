@@ -301,9 +301,14 @@ footer {
 
 /* line 44, public/sass/_carousel.scss */
 #carouselExampleIndicators {
-  width: 95%;
+  width: 100%;
   margin: auto;
   margin-bottom: 50px; }
+
+@media only screen and (max-width: 850px) {
+  /* line 51, public/sass/_carousel.scss */
+  .buyButtonsWrapper {
+    gap: 100px; } }
 
 /* line 1, public/sass/_featuredItems.scss */
 .featuredItemsListWrapper {
@@ -352,6 +357,19 @@ footer {
     .featuredItemsListWrapper #poisonImgLink:hover {
       cursor: pointer; }
 
+@media only screen and (max-width: 850px) {
+  /* line 169, public/sass/_featuredItems.scss */
+  .featuredItemsListWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    /* line 174, public/sass/_featuredItems.scss */
+    .featuredItemsListWrapper .necaIntroductionWrapper {
+      width: 100%; }
+    /* line 178, public/sass/_featuredItems.scss */
+    .featuredItemsListWrapper .necaImgWrapper {
+      width: 100%; } }
+
 /* line 1, public/sass/_linkIcons.scss */
 .linkIconsWrapper {
   width: 100%;
@@ -380,51 +398,51 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 300px;
   color: white; }
-  /* line 15, public/sass/_popFeatured.scss */
-  .popFunkoFeatured .popMainImgContainer {
-    height: 100%; }
-  /* line 21, public/sass/_popFeatured.scss */
+  /* line 20, public/sass/_popFeatured.scss */
   .popFunkoFeatured .popFeaturedImg {
     width: 400px;
     height: 200px;
     object-fit: cover; }
-  /* line 29, public/sass/_popFeatured.scss */
+  /* line 26, public/sass/_popFeatured.scss */
   .popFunkoFeatured .longPopImage {
     width: 420px;
     height: 100% !important;
     margin-right: 2px; }
-  /* line 36, public/sass/_popFeatured.scss */
+  /* line 33, public/sass/_popFeatured.scss */
   .popFunkoFeatured .popRowImgContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 10px;
     padding: 20px;
     border-radius: 10px; }
-  /* line 47, public/sass/_popFeatured.scss */
+  /* line 44, public/sass/_popFeatured.scss */
   .popFunkoFeatured .popFeaturedIntro {
     grid-column: span 2;
     text-align: center; }
-  /* line 53, public/sass/_popFeatured.scss */
+  /* line 50, public/sass/_popFeatured.scss */
   .popFunkoFeatured .popFeaturedIntro h1 {
     font-size: 4rem; }
-  /* line 57, public/sass/_popFeatured.scss */
+  /* line 54, public/sass/_popFeatured.scss */
   .popFunkoFeatured .popFeaturedImgAll {
-    border: 3px double white;
     filter: drop-shadow(3px 3px 10px black);
     border-radius: 10%; }
-    /* line 61, public/sass/_popFeatured.scss */
+    /* line 57, public/sass/_popFeatured.scss */
     .popFunkoFeatured .popFeaturedImgAll:hover {
       cursor: pointer;
       animation-name: zoom-In;
       animation-duration: 1s; }
-  /* line 69, public/sass/_popFeatured.scss */
+  /* line 65, public/sass/_popFeatured.scss */
   .popFunkoFeatured .popFeaturedOutro {
     grid-column: span 2;
     text-align: center;
     font-size: 3rem; }
+
+@media only screen and (max-width: 850px) {
+  /* line 75, public/sass/_popFeatured.scss */
+  .popFunkoFeatured {
+    flex-wrap: wrap; } }
 
 /* line 16, public/sass/main.scss */
 body {
