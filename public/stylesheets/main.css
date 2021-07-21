@@ -173,29 +173,33 @@ nav {
   overflow: hidden; }
   /* line 7, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .servicesWrapper {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
     display: flex;
-    padding: 30px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-size: 30px;
-    gap: 5%;
+    gap: 1%;
     margin-bottom: 200px; }
-  /* line 17, public/sass/_aboutUs.scss */
+  /* line 19, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .servicesH1 {
     text-align: center;
     color: white; }
-  /* line 22, public/sass/_aboutUs.scss */
+  /* line 24, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .serviceIcons {
     width: 100%;
     height: 200px;
     object-fit: contain; }
-  /* line 28, public/sass/_aboutUs.scss */
+  /* line 30, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .servicesH3 {
+    box-sizing: border-box;
+    padding: 20px;
     background-color: orange;
     width: 100%;
     border-radius: 2px;
     box-shadow: 3px 3px 5px black; }
-  /* line 36, public/sass/_aboutUs.scss */
+  /* line 40, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutUsBackground {
     width: 100%;
     height: 300px;
@@ -203,7 +207,7 @@ nav {
     object-fit: cover;
     z-index: 1;
     margin-bottom: 100px; }
-  /* line 49, public/sass/_aboutUs.scss */
+  /* line 53, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutInformationWrapper {
     position: relative;
     width: 80%;
@@ -211,12 +215,18 @@ nav {
     padding: 0;
     z-index: 2;
     gap: 60px; }
-  /* line 59, public/sass/_aboutUs.scss */
+  /* line 63, public/sass/_aboutUs.scss */
   .aboutUsBackgroundWrapper .aboutInformation {
     text-align: left;
     font-size: 2.5rem;
     line-height: 2;
     color: white; }
+
+@media screen and (max-width: 850px) {
+  /* line 72, public/sass/_aboutUs.scss */
+  .servicesWrapper {
+    flex-direction: column;
+    align-items: stretch; } }
 
 /* line 1, public/sass/_footer.scss */
 footer {
